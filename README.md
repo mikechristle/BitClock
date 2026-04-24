@@ -19,6 +19,11 @@ To set the alarm time, use the PC Control Program.
 The BitClock is controlled by a Raspberry Pi Pico W.
 All the code is written in Micro-Python.
 The code will get the current time over the internet using the get_ntp_time library.
+
+The file network.info contains the login credentials for you router.
+When the clock powers up, it will use this info to login, 
+then display the last byte of the IP address for 10 seconds.
+This address is needed in the PS control program to connect to the clock.
 ## PC Control Program
 The control program was written in Python.
 It runs on a PC and communicates with the clock with a socket connection.
