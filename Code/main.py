@@ -179,7 +179,7 @@ def set_time():
 # Setup internet connection
 # ---------------------------------------------------------------------
 
-with open("network.info", "r") as file:
+with open("login.txt", "r") as file:
     SSID = file.readline().strip()
     PSWD = file.readline().strip()
 
